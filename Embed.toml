@@ -1,0 +1,12 @@
+[default.probe]
+protocol = "Swd"
+
+[default.general]
+chip = "nrf52833_xxAA" # micro:bit v2
+# chip = "nrf51822_xxAA" # micro:bit V1
+
+[default.rtt]
+enabled = true
+
+[default.gdb]
+enabled = false
