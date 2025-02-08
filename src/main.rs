@@ -2,7 +2,6 @@
 #![no_main]
 #![no_std]
 
-use cortex_m::prelude::_embedded_hal_blocking_delay_DelayUs;
 use cortex_m_rt::entry;
 use microbit::{
     board::Board,
@@ -10,7 +9,6 @@ use microbit::{
     hal::{prelude::*, Timer},
 };
 use panic_rtt_target as _;
-use rtt_target::rprintln;
 use rtt_target::rtt_init_print;
 
 // const LEDS = [(0,0), (0,1), (0,2) (0,3) (0,4), (1,4), (2,4), (3,4), (4,4), (4,3)]
@@ -39,7 +37,6 @@ fn main() -> ! {
     loop {
         let mut row = 0;
         let mut col = 0;
-        let mut i = 0;
         while col < cols {
             leds[row][col] = 1;
             leds[past_led.0][past_led.1] = 0;
