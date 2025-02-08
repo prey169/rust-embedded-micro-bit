@@ -3,11 +3,7 @@
 #![no_std]
 
 use cortex_m_rt::entry;
-use microbit::{
-    board::Board,
-    display::blocking::Display,
-    hal::{prelude::*, Timer},
-};
+use microbit::{board::Board, display::blocking::Display, hal::Timer};
 use panic_rtt_target as _;
 use rtt_target::rtt_init_print;
 
