@@ -9,7 +9,7 @@ chip = "nrf52833_xxAA" # micro:bit v2
 halt_afterwards = true
 
 [default.rtt]
-enabled = false
+enabled = true
 
 [default.gdb]
-enabled = true
+enabled = false
